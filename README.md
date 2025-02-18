@@ -1,16 +1,18 @@
 # clean_architecture
 
-A new Flutter project.
+This application demonstrates a simple task app that fetches tasks from an API using the Dio package and implements Clean Architecture principles.
+## Architecture
 
-## Getting Started
+The app follows a Clean Architecture structure, dividing the code into the following layers:
 
-This project is a starting point for a Flutter application.
+*   **Presentation Layer:** Contains the UI (widgets) and state management (BLoC).
+*   **Domain Layer:** Contains use cases that encapsulate business logic and  repositories (interface) .
+*   **Data Layer:** Contains repositories (implementations) and data sources (remote )and model.
 
-A few resources to get you started if this is your first Flutter project:
+## Dependencies
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+*   `flutter_bloc`: For state management.
+*   `dio`: For making HTTP requests to the API.
+*   `get_it`: For dependency injection.
+## video Demo output
+[clean_architecture.webm](https://github.com/user-attachments/assets/40970f9e-e745-479c-aa31-de60129450d4)
